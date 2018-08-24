@@ -19,7 +19,8 @@ RUN apt-get update && apt-get install -y \
         libmcrypt-dev \
         libxslt-dev \
         libmemcached-dev \
-  && docker-php-ext-install gd pdo pdo_mysql mcrypt mysqli shmop sockets sysvsem xsl iconv zip  bcmath xmlrpc soap intl gettext pcntl
+  && docker-php-ext-install gd pdo pdo_mysql mcrypt mysqli shmop sockets sysvsem xsl iconv zip  bcmath xmlrpc soap intl gettext pcntl \
+  && docker-php-ext-install opcache
 
 
 RUN pecl install redis-3.1.0 \
