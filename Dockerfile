@@ -24,6 +24,7 @@ RUN apt-get update && apt-get install -y \
         libsasl2-dev \
         libxml2-dev \
         gettext \
+        zip unzip \
         libmcrypt-dev \
         libxslt-dev \
         libmemcached-dev \
